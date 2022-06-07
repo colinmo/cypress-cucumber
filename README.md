@@ -31,7 +31,7 @@ This repository has a Dockerised cypress test running that includes the Cucumber
 5. To run an interactive shell (change `feature` to `cypress` for basic tests):
    ```sh
     docker run --rm -i \
-        --env USERNAME="${ECOUSER}" --env PASSWORD="${ECOPASS}" \
+        --env USERNAME="${uservar}" --env PASSWORD="${passvar}" \
         -v ${PWD}/feature:/cypress/integrations/ \
         -v ${PWD}/output/videos:/cypress/videos \
         -v ${PWD}/output/screens:/cypress/screenshots \
