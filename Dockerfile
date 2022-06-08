@@ -16,6 +16,7 @@ COPY cypress-gherkin.json /
 COPY common.js /
 COPY startup-basic.sh /
 COPY startup-gherkin.sh /
+COPY support /
 RUN chmod u+x startup-basic.sh \
     && chmod u+x startup-gherkin.sh
 
